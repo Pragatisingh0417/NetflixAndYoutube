@@ -8,12 +8,12 @@ type RowProps = {
 };
 
 const movies = [
-  "/images/movie-1.webp",
-  "/images/movie-2.webp",
-  "/images/movie-3.webp",
+  "/images/movie-1.jpg",
+  "/images/movie-2.jpg",
+  "/images/movie-3.jpg",
+  "/images/movie-1.jpg",
   "/images/movie-4.webp",
-  "/images/movie-5.webp",
-  "/images/movie-6.webp",
+  "/images/movie-3.jpg",
   "/images/movie-7.webp",
   "/images/movie-8.webp",
   "/images/movie-9.webp",

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Home, PlaySquare, Video, User, Tv, Radio, Film, Clapperboard } from "lucide-react";
+import { Home, PlaySquare, Video, User, Tv, Radio, Film, Clapperboard, Headphones  } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 export default function Sidebar() {
@@ -55,6 +55,14 @@ export default function Sidebar() {
             <span className="text-[9px]">Vlogs</span>
           </div>
         </Link>
+        
+        {/* MUSIC */}
+<Link href="/music">
+  <div className={itemClass("/music")}>
+    <Headphones size={18} />
+    <span className="text-[9px]">Music</span>
+  </div>
+</Link>
 
         {/* SUBSCRIPTIONS */}
         <Link href="/subscription">

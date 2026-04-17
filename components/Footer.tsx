@@ -1,4 +1,5 @@
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -16,14 +17,18 @@ export default function Footer() {
 
         {/* Links */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm mb-6">
-          <p className="hover:text-white cursor-pointer">Help Center</p>
+                        <Link href="/about"><p className="hover:text-white">About</p></Link>
+                                    <Link href="/platforms"><p className="hover:text-white">Platforms</p></Link>
+
+            <Link href="/contact"><p className="hover:text-white">Contact</p></Link>
+                        <Link href="/login"><p className="hover:text-white">Login</p></Link>
+
+            <Link href="/signup"><p className="hover:text-white">Signup</p></Link>
+
+
           <p className="hover:text-white cursor-pointer">Terms of Use</p>
           <p className="hover:text-white cursor-pointer">Privacy Policy</p>
-          <p className="hover:text-white cursor-pointer">Contact Uss</p>
-          <p className="hover:text-white cursor-pointer">Jobs</p>
-          <p className="hover:text-white cursor-pointer">Account</p>
-          <p className="hover:text-white cursor-pointer">Media Center</p>
-          <p className="hover:text-white cursor-pointer">Legal Notices</p>
+
         </div>
 
         {/* Bottom */}
@@ -32,7 +37,7 @@ export default function Footer() {
           <p>© 2026 StreamX. All rights reserved.</p>
 
           <p className="mt-2 md:mt-0">
-            Built with ❤️ using Next.js
+            Built with ❤️ By Gem Web Services
           </p>
 
         </div>

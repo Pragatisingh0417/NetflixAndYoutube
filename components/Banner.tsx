@@ -1,10 +1,10 @@
 export default function Banner() {
   return (
-    <div className="relative h-[75vh] w-full mt-16">
-
-      {/* Background Image */}
+<div className="relative h-[75vh] w-full max-w-7xl mx-auto rounded-xl overflow-hidden">    
+  
+    {/* Background Image */}
       <img
-        src="/images/banner.avif" // 👉 use your local image
+        src="/images/banner.avif" 
         className="w-full h-full object-cover"
       />
 

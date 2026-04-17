@@ -1,19 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const poppins = Poppins({
   subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-poppins",
 });
 
 export const metadata: Metadata = {
-  title: "StreamX",
+  title: "BlackbOX",
   description: "Netflix + YouTube Hybrid Platform",
 };
 
@@ -23,12 +26,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable}`}
-    >
-      <body className="bg-[#0B0B0F] text-white antialiased">
-        {children}
+    <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
+      <body className="bg-[#0B0B0F] text-white antialiased font-sans">
+
+        {/* NAVBAR */}
+        <Navbar />
+
+        {/* MAIN CONTENT */}
+        <main className="">
+          {children}
+        </main>
+
+        {/* FOOTER */}
+        <Footer />
+
       </body>
     </html>
   );

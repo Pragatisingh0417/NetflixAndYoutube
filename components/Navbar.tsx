@@ -1,49 +1,53 @@
 "use client";
 
-import { Search, Bell } from "lucide-react";
+import { Search, Bell, Menu, Mic } from "lucide-react";
 
 export default function Navbar() {
   return (
-    <div className="fixed top-0 w-full z-50 bg-black/70 backdrop-blur-md border-b border-white/10">
+    <div className="fixed top-0 w-full z-50 bg-[#0B0B0F] border-b border-white/10 px-4 md:px-6 py-2 flex items-center justify-between">
+      {/* LEFT */}
+      <div className="flex items-center gap-4">
+        <Menu size={22} className="cursor-pointer" />
 
-      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+        <h1 className="text-red-600 font-bold text-xl tracking-wide">
+          BlackbOX
+        </h1>
+      </div>
 
-        {/* LEFT */}
-        <div className="flex items-center gap-8">
+      {/* CENTER */}
+      <div className="hidden md:flex items-center w-full max-w-[600px] mx-auto max-w-xl">
 
-          {/* Logo */}
-          <h1 className="text-red-600 font-bold text-4xl tracking-wide cursor-pointer">
-            StreamX
-          </h1>
-
-          {/* Nav Links */}
-          <div className="hidden md:flex gap-6 text-sm text-gray-300">
-            <p className="hover:text-white transition cursor-pointer">Home</p>
-            <p className="hover:text-white transition cursor-pointer">Explore</p>
-            <p className="hover:text-white transition cursor-pointer">Shorts</p>
-          </div>
-
+        {/* INPUT */}
+        <div className="flex items-center flex-1 bg-[#121212] border border-white/10 rounded-l-full px-4 py-2">
+          <input
+            placeholder="Search"
+            className="bg-transparent outline-none w-full text-sm text-white placeholder-gray-400"
+          />
         </div>
 
-        {/* RIGHT */}
-        <div className="flex items-center gap-4">
+        {/* SEARCH BUTTON */}
+        <button className="bg-[#222] border border-white/10 border-l-0 px-4 py-2 rounded-r-full hover:bg-[#2a2a2a]">
+          <Search size={18} />
+        </button>
 
-          {/* Search */}
-          <div className="flex items-center bg-[#1a1a1a] px-3 py-1.5 rounded-md gap-2 focus-within:ring-1 focus-within:ring-white/30 transition">
-            <Search size={16} className="text-gray-400" />
-            <input
-              placeholder="Search"
-              className="bg-transparent outline-none text-sm placeholder-gray-400"
-            />
-          </div>
+        {/* MIC */}
+        <button className="ml-3 bg-[#181818] p-2 rounded-full hover:bg-[#2a2a2a]">
+          <Mic size={18} />
+        </button>
 
-          {/* Notification */}
-          <Bell className="text-gray-300 hover:text-white cursor-pointer transition" size={18} />
+      </div>
 
-          {/* Profile */}
-          <div className="w-8 h-8 bg-gradient-to-br from-gray-400 to-gray-600 rounded-full cursor-pointer" />
+      {/* RIGHT */}
+      <div className="flex items-center gap-5">
 
+        <div className="hidden md:flex items-center gap-2 cursor-pointer hover:bg-[#1a1a1a] px-3 py-1.5 rounded-full transition">
+          <span className="text-xl">＋</span>
+          <span className="text-sm">Create</span>
         </div>
+
+        <Bell size={20} className="cursor-pointer hover:text-white text-gray-300" />
+
+        <div className="w-8 h-8 bg-gray-500 rounded-full cursor-pointer" />
 
       </div>
 

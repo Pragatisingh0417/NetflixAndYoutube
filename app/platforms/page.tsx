@@ -9,7 +9,7 @@ const platforms = [
   { name: "Amazon Prime", logo: "/logos/Amazon Prime.png", category: "Movies & Shopping" },
   { name: "HBO Max", logo: "/logos/HBO Max.jpg", category: "Premium Content" },
   { name: "Apple TV+", logo: "/logos/Apple TV+.jpg", category: "Original Shows" },
-  { name: "Peacock", logo: "/logos/peacock.png", category: "NBC Content" },
+  { name: "Peacock", logo: "/logos/Peacock.png", category: "NBC Content" },
   { name: "Paramount+", logo: "/logos/paramount.png", category: "CBS & Movies" },
 ];
 

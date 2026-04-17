@@ -4,12 +4,12 @@ import PlatformCard from "./PlatformCard";
 
 const platforms = [
   { name: "Netflix", logo: "/logos/netflix.png" },
-  { name: "Hulu", logo: "/logos/hulu.jpg" },
+  { name: "Hulu", logo: "/logos/Hulu.jpg" },
   { name: "Disney+", logo: "/logos/disney.png" },
   { name: "Amazon Prime", logo: "/logos/Amazon Prime.png" },
   { name: "HBO Max", logo: "/logos/HBO Max.jpg" },
   { name: "Apple TV+", logo: "/logos/Apple TV+.jpg" },
-  { name: "Peacock", logo: "/logos/peacock.png" },
+  { name: "Peacock", logo: "/logos/Peacock.png" },
   { name: "Paramount+", logo: "/logos/paramount.png" },
 ];
 
